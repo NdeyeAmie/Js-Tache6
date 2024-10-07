@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table {
+          border-collapse: collapse;
+        }
+        table, th, td {
+          border: 1px solid black;
+        }
+        th, td {
+          padding: 10px;
+          text-align: left;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 50px;
+        }
+        input[type="text"] {
+            padding: 10px;
+            font-size: 16px;
+            width: 200px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            margin-top: 20px;
+        }
+        .result {
+            margin-top: 20px;
+            font-size: 18px;
+            color: green;
+        }
+        .warning {
+            color: red;
+        }
+
+      </style>
+</head>
+<body>
+    <h1>Liste des Moiss</h1>
+    <h1>Jeu : Deviner un nombre entre 10 et 100</h1>
+
+    <p>Entrez un nombre :</p>
+    <input type="text" id="nombre" min="10" max="100" placeholder="Entrez un nombre entre 10 et 100">
+    <br>
+    <button onclick="devinerNombre()">Soumettre</button>
+
+    <div class="result" id="messageResultat"></div>
+    <div class="warning" id="messageErreur"></div>
+
+
+   <script src="main.js"></script>
+    <!-- <script src="Tabele.js"></script> -->
+</body>
+</html>
